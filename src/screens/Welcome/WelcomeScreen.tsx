@@ -23,7 +23,7 @@ export function Welcome() {
           <Text style={styles.subtitle}>Comece agora mesmo, clicando abaixo</Text>
 
           <View style={styles.blockButton}>
-            <Button content='Começar'/>
+            <Button content='Começar'onPress={() => alert('Botão clicado!')}/>
           </View>
         </View>
     </ImageBackground>
