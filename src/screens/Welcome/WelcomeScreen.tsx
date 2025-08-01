@@ -22,7 +22,9 @@ export function Welcome() {
           <Text style={styles.title}>A pessoa certa para a recordação perfeita</Text>
           <Text style={styles.subtitle}>Comece agora mesmo, clicando abaixo</Text>
 
-          <Button content='Começar'/>
+          <View style={styles.blockButton}>
+            <Button content='Começar'/>
+          </View>
         </View>
     </ImageBackground>
   );

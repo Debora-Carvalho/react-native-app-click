@@ -4,8 +4,8 @@ export const styles = StyleSheet.create({
   containerButton: {
     backgroundColor: '#E24939',
     borderRadius: 20,
-    width: "90%",
-    height: 90,
+    width: "85%",
+    height: 80,
     alignItems: 'center',
     justifyContent: 'center'
   },

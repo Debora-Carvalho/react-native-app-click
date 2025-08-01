@@ -13,8 +13,9 @@ export const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: '60%'
+    justifyContent: 'flex-end',
+    marginBottom: '20%',
+    gap: 10
   },
   imageLogo: {
     width: 262,
@@ -28,6 +29,12 @@ export const styles = StyleSheet.create({
   subtitle: {
     fontSize: 16,
     fontWeight: 400,
-    color: '#FFFFFF'
+    color: '#FFFFFF',
+  },
+  blockButton: {
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: '10%',
   }
 });
