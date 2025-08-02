@@ -26,10 +26,22 @@ export const styles = StyleSheet.create({
     fontWeight: 800,
     color: '#FFFFFF',
   },
-  subtitle: {
+  containerLink: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 5
+  },
+  textLink: {
+    alignItems: 'center',
+    justifyContent: 'center',
     fontSize: 16,
     fontWeight: 400,
     color: '#FFFFFF',
+  },
+  link: {
+    fontWeight: 800, 
+    color: '#F9A450'
   },
   blockButton: {
     width: '100%',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageBackground, View, Text, Image } from 'react-native';
+import { ImageBackground, View, Text, TouchableOpacity } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
 import { styles } from './LoginScreenStyles';
@@ -24,7 +24,12 @@ export function Login() {
                 <Button content='Entrar'onPress={() => alert('Botão clicado!')}/>
             </View>
 
-            <Text style={styles.subtitle}>Ainda não tem uma conta? Cadastre-se</Text>
+            <View style={styles.containerLink}>
+                <Text style={styles.textLink}>Ainda não tem uma conta? </Text>
+              <TouchableOpacity>
+                <Text style={[styles.textLink, styles.link]}>Cadastre-se</Text>
+              </TouchableOpacity> 
+            </View>
         </View>
         
         <StatusBar style="light" />
