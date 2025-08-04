@@ -38,6 +38,23 @@ export const styles = StyleSheet.create({
     fontWeight: 600,
     color: '#FFFFFF',
   },
+  containerLink: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 5
+  },
+  textLink: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: 16,
+    fontWeight: 400,
+    color: '#FFFFFF',
+  },
+  link: {
+    fontWeight: 800, 
+    color: '#F9A450'
+  },
   containerProfile: {
     backgroundColor: '#E24939',
     flexDirection: 'row',
