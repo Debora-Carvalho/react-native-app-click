@@ -14,26 +14,26 @@ import imgLogoClick from '../../../assets/images/logotipo-click.png';
 import { Button } from '../../components/Button/Button';
 
 export function Welcome() {
-  const navigation = useNavigation<WelcomeScreenProp>();
+    const navigation = useNavigation<WelcomeScreenProp>();
 
-  return (
-    <ImageBackground 
-        source={imgBackgroundWelcome}
-        style={styles.container}
-        resizeMode="cover"
-    >
-        <View style={styles.containerContent}>
-          <Image 
-            source={imgLogoClick}
-            style={styles.imageLogo}
-          />
-          <Text style={styles.title}>A pessoa certa para a recordação perfeita</Text>
-          <Text style={styles.subtitle}>Comece agora mesmo, clicando abaixo</Text>
+    return (
+        <ImageBackground
+            source={imgBackgroundWelcome}
+            style={styles.container}
+            resizeMode="cover"
+        >
+            <View style={styles.containerContent}>
+                <Image
+                    source={imgLogoClick}
+                    style={styles.imageLogo}
+                />
+                <Text style={styles.title}>A pessoa certa para a recordação perfeita</Text>
+                <Text style={styles.subtitle}>Comece agora mesmo, clicando abaixo</Text>
 
-          <View style={styles.blockButton}>
-            <Button content='Começar' onPress={() => navigation.navigate('SelectProfile')}/>
-          </View>
-        </View>
-    </ImageBackground>
-  );
+                <View style={styles.blockButton}>
+                    <Button content='Começar' onPress={() => navigation.navigate('SelectProfile')} />
+                </View>
+            </View>
+        </ImageBackground>
+    );
 }
