@@ -28,7 +28,7 @@ export function RegisterPhotographer() {
     const [errorTitle, setErrorTitle] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
-    function handleCadastrar() {
+    function handleRegister() {
         if (!name || !email || !number || !password) {
             setErrorTitle('⚠️ Campos obrigatórios');
             setErrorMessage('Por favor, preencha todos os campos.');
@@ -136,7 +136,7 @@ export function RegisterPhotographer() {
         </View>
 
         <View style={styles.blockButton}>
-            <Button content='Cadastrar' onPress={handleCadastrar}/>
+            <Button content='Cadastrar' onPress={handleRegister}/>
         </View>
 
         {/* Modal de sucesso */}

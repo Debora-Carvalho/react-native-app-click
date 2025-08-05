@@ -38,7 +38,7 @@ export function SelectProfile() {
 
         <TouchableOpacity 
             style={styles.containerProfile}
-            onPress={() => Alert.alert('Cadastro', 'perfil cliente')}
+            onPress={() => navigation.navigate('RegisterClient')}
         >
             <Text style={styles.textProfile}>Cliente</Text>
             <Image 
