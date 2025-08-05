@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { View, Image, Text, TextInput, TouchableOpacity } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import Checkbox from 'expo-checkbox';
 import { useNavigation } from '@react-navigation/native';
@@ -10,6 +10,7 @@ import { RootStackParamList } from '../../routes/routes';
 type RegisterClientScreenProp = NativeStackNavigationProp<RootStackParamList, 'RegisterClient'>;
 
 import { styles } from './RegisterClientScreenStyles';
+import imgLogoClick from '../../../assets/images/logotipo-click.png';
 import { Button } from '../../components/Button/Button';
 import { DialogModal } from '../../components/DialogModal/DialogModal';
 
@@ -49,9 +50,16 @@ export function RegisterClient() {
     
     return (
     <View style={styles.container}>
-        <Text style={styles.title}>
-            Cadastro
-        </Text>
+        <View style={styles.containerHeader}>
+            <Image 
+                source={imgLogoClick}
+                style={styles.imageLogo}
+            />
+            
+            <Text style={styles.title}>
+                Cadastro
+            </Text>
+        </View>
 
         <Text style={styles.textSimple}>
             Preencha os campos e se cadastre como 

@@ -10,6 +10,14 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         gap: 10
     },
+    containerHeader: {
+        alignItems: 'center',
+        gap: 10
+    },
+    imageLogo: {
+        width: 178,
+        height: 61
+    },
     title: {
         fontSize: 22,
         fontWeight: 800,
