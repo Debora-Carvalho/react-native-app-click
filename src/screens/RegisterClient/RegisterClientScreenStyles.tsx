@@ -26,8 +26,10 @@ export const styles = StyleSheet.create({
     },
     textSimple: {
         fontSize: 16,
+        textAlign: 'justify',
         color: '#FFFFFF',
         paddingHorizontal: 30,
+        marginBottom: 20
     },
     textBold: {
         fontWeight: 800,
@@ -84,8 +86,9 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 5,
     },
     checkboxLabel: {
-        marginLeft: 8,
+        marginLeft: 20,
         fontSize: 14,
+        textAlign: 'left',
         color: '#FFFFFF',
         flex: 1,
     },

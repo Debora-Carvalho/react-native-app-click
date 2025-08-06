@@ -61,12 +61,14 @@ export function RegisterPhotographer() {
             </Text>
         </View>
 
-        <Text style={styles.textSimple}>
-            Preencha os campos e se cadastre como 
-            <Text style={styles.textBold}> 
+        <View>
+            <Text style={[styles.textSimple, {marginBottom: 0}]}>
+                Preencha os campos e se cadastre como
+            </Text>
+            <Text style={[styles.textSimple, styles.textBold]}>
                 profissional de fotografia
             </Text>
-        </Text>
+        </View>
 
         <View>
             <View style={styles.containerInput}>
